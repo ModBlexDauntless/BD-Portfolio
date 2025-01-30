@@ -1,0 +1,400 @@
+/* Reset Default Margins and Padding */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4; /* Optional: Light background for better contrast */
+  }
+  
+  /* Navigation Bar */
+  
+  nav {
+    background-color: #7600bc;
+    padding: 10px 20px; /* Reduced padding for tighter alignment */
+    display: flex;
+    justify-content: space-between; /* Space between profile and navigation links */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .profile_name {
+    color: #f0f0f0; /* Light color */
+    font-size: 30px; /* Set font size to 30px */
+  }
+  
+  .profile_name .contact_info {
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Added spacing between contact info */
+  }
+  
+  .contact_info img {
+    width:25px;
+    height:25px; /* Ensure icons are square */
+    margin-right: 10px;
+  }
+  
+  /* Navigation Links Container */
+  .topdiv {
+    display: flex; /* Use Flexbox for navigation links */
+  }
+  
+  /* Navigation Links */
+  .topmenu {
+    color: lightgray;
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .topmenu:hover {
+      color: white;               /* Hover text color */
+      font-weight: bolder;        /* Bolder text on hover */
+      text-decoration: underline; /* Underlined text on hover */
+      cursor: pointer;            /* Changes cursor to pointer on hover */
+  }
+  
+  /* Clearfix not needed with Flexbox */
+  
+  /* About Me Section */
+  
+  .container {
+    display: flex;
+    align-items: center;  
+    /* Either remove this line OR change it to: */
+    /* flex-wrap: nowrap;  */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .profile_image {
+    /* Remove width: 100%; */
+    max-width: 200px;           /* Sets the maximum width */
+    height: auto;               /* Maintains aspect ratio */
+    margin: 5px 20px 5px 0;     /* Adds right margin for spacing */
+    border-radius: 10px;        /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  }
+  
+  #about-me h1 {
+    font-size: 35px;            /* Adjusted font size for better balance */
+    margin-top: 0;              /* Removed top margin */
+    color: #7600bc;
+  }
+  
+  #about-me p {
+    font-size: 18px;            /* Adjusted font size for readability */
+    color: rgb(128, 128, 128);
+    margin-top: 10px;           /* Added spacing above the paragraph */
+  }
+  
+  /* Skills Section */
+  
+  #skills {
+    padding: 40px 20px;
+    background-color: #fff;     /* White background for contrast */
+  }
+  
+  #skills h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #7600bc;
+    margin-bottom: 20px;
+  }
+  
+  .all_skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    /* Centers the skill cards */
+  }
+  
+  .skill {
+    border: 1px solid gray;
+    border-radius: 6px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+    background-color: #fafafa; /* Light background for skill cards */
+  }
+  
+  .skill img {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  
+  .skill h6 {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+  } 
+  
+  .skill p {
+    font-size: 15px;
+    color: gray;
+    margin: 0;
+  } 
+  
+  /* Projects Section */
+  
+  #projects {
+    padding: 40px 20px;
+    background-color: #fff;     /* White background for contrast */
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #7600bc;
+    margin-bottom: 20px;
+  }
+  
+  .projects-container {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .project-card {
+    margin: 20px 0;
+    padding-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    font-size: 25px;
+    color: #7600bc;
+    margin-bottom: 10px;
+  }
+  
+  .project-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .project-card li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* Recommendations Section */
+  
+  #recommendations {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+  }
+  
+  #recommendations h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #7600bc;
+    margin-bottom: 20px;
+  }
+  
+  .all_recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recommendation {
+    font-style: italic;
+    text-align: left;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: 1px solid gray;
+    font-size: 16px; /* Reduced from 18px to 16px */
+    position: relative;
+  }
+  
+  .recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+  }
+  
+  .recommendation span:first-of-type {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .recommendation span:last-of-type {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  /* Recommendation Form */
+  
+  #contact {
+    padding: 40px 20px;
+    background-color: #fff;     /* White background for contrast */
+  }
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin: 0 auto; 
+    border: thin solid #7600bc;
+    width: 100%; /* Changed from 50% to 100% */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .introduction {
+    font-size: 24px;
+    color: #7600bc;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  
+  input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px 0;  
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Buttons */
+  
+  button {
+    background-color: #7600bc;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5e0099;
+  }
+  
+  /* Home Icon Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .iconbutton img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Form Pop-up */
+  
+  .popup {
+    width: 400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    padding: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+    z-index: 1000; /* Ensures the popup appears above other elements */
+  }
+  
+  .popup.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .popup button:hover {
+    background-color: #7600bc;
+    border: none;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile_image {
+      max-width: 150px;
+      margin: 0 0 20px 0;
+    }
+  
+    fieldset {
+      width: 80%;
+    }
+  
+    .all_skills, .all_recommendations {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .topdiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+    }
+  
+    .topmenu {
+      padding: 10px;
+      margin: 5px;
+      font-size: 18px;
+    }
+  }

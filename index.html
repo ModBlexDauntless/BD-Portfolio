@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paul Desmond - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Paul Desmond
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+            pdesmond@jeemail.com
+          </div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+            +1 (555) 555-0585
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.postimg.cc/P5gTRP8Z/Profile.jpg" class="profile_image" alt="Profile Picture of Paul Desmond"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Paul Desmond! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving Hand Emoji"/>
+          </h1>
+          <p>
+            I’m a passionate AI enthusiast currently exploring modern web frameworks 
+      and cloud deployments. My goal is to combine front-end creativity with 
+      AI-driven solutions, delivering impactful user experiences that solve 
+      real-world problems.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="all_skills">
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5 Logo"/>
+            <h6>HTML</h6>
+            <p>2 years experience</p>
+          </div>  
+      
+          <div class="skill">
+            <img src="html_finalprojimages/js.jpeg" alt="JavaScript Logo"/>
+            <h6>JavaScript</h6>
+            <p>3 years experience</p>
+          </div>  
+      
+          <!-- New Skills -->
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/6062/6062645.png" 
+                 alt="AI Prompt Engineering Icon" />
+            <h6>AI Prompt Engineering</h6>
+            <p>1 year experience</p>
+          </div>
+      
+          <!-- AI Chatbot Creation -->
+<div class="skill">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" 
+         alt="AI Chatbot Creation Icon" />
+    <h6>AI Chatbot Creation</h6>
+    <p>6 months experience</p>
+  </div>
+  
+  <!-- Midjourney Expertise -->
+  <div class="skill">
+    <img 
+      src="https://img.icons8.com/fluency/48/midjourney.png" 
+      alt="Midjourney Icon"
+    />
+    <h6>Midjourney Expertise</h6>
+    <p>2 years experience</p>
+  </div>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-container">
+      
+          <!-- Project 1: Agentic AI -->
+          <div class="project-card">
+            <h3>Agentic AI Workflow Orchestrator</h3>
+            <ul>
+              <li>Created an autonomous AI system that plans tasks, reducing manual workflows by 70%.</li>
+            </ul>
+          </div>
+          <hr>
+      
+          <!-- Project 2: Advanced Chatbot -->
+          <div class="project-card">
+            <h3>Advanced LLM Chatbot</h3>
+            <ul>
+              <li>Developed a GPT-based chatbot that delivers contextual support for customer service portals.</li>
+            </ul>
+          </div>
+          <hr>
+      
+          <!-- Project 3: AI Tools Recommendation Engine -->
+          <div class="project-card">
+            <h3>AI Tools Recommendation Engine</h3>
+            <ul>
+              <li>Built a solution that analyzes user needs and recommends top AI tools in real-time.</li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Paul is a collaborative teammate with a keen sense for problem-solving. 
+            He identifies challenges early, then proposes creative solutions. 
+            Paul’s positive attitude lifts team morale, making any project more enjoyable.
+            <span>&#8221;</span>
+          </div>
+          
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Paul was a game-changer for our AI research. 
+            His strategic mindset, combined with technical expertise, drastically cut development time. 
+            He also provides valuable guidance for future improvements.
+            <span>&#8221;</span>
+          </div>
+          
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Paul’s dedication and passion for learning truly stood out on our team. 
+            He tackles complex problems with creativity, and his leadership ensured timely results 
+            that exceeded expectations in every way.
+            <span>&#8221;</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" id="rec_name" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="30" rows="5" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Home Icon Button -->
+    <div class="iconbutton">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               fill="none" 
+               viewBox="0 0 24 24" 
+               stroke-width="1.5" 
+               stroke="white" 
+               width="63px">
+            <path stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+
+    <!-- Recommendation Submission Popup -->
+<div class="popup flex_center" id="popup">
+    <img src="html_finalprojimages/checkmark--outline.svg" alt="Confirmation Icon"/>
+    <h3>Thank you for your recommendation!</h3>
+    <p>We appreciate your feedback!</p>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+  </body>
+</html>
